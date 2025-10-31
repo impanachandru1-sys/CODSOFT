@@ -1,0 +1,11 @@
+tasks=[]
+print("Simple To-Do Lisr (TYpe 'exit' to Stop)\n")
+while True:
+    task=input("Enter task:")
+    if task.lower()=="exit":
+        break
+    tasks.append(task)
+    print("\nYour tasks:")
+    for i,t in enumerate(tasks,1):
+          print(f"{i}.{t}")
+    print()
